@@ -4,6 +4,7 @@ import AOS from 'aos'
 import './App.css'
 import logoGif from './assets/wired-outline-744-pendrive-storage-hover-pinch (1).gif'
 import KeyFeaturesSection from './KeyFeaturesSection'
+import videoRecord from './assets/recording.mov'
 
 function App() {
 	useEffect(() => {
@@ -61,22 +62,36 @@ function App() {
 							</ul>
 						</section>
 
-            <KeyFeaturesSection />
+						<KeyFeaturesSection />
+
+						<section className="min-h-[50vh] text-start mt-10" data-aos="fade-up">
+							<video controls>
+								<source src={videoRecord} type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+						</section>
+
+						<div className="my-8 center">
+							<button className="bg-blue-700 hover:bg-blue-700 rounded-full pl-2 ring-2 ring-offset-2 center gap-2 px-2 py-2">
+								<img className='w-8 h-8' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+								View in github
+							</button>
+						</div>
 
 						<section className="h-[50vh] text-start mt-10" data-aos="fade-up">
-              <h2 className="text-4xl font-semibold text-blue-300 mb-6">Decentra Future</h2>
-              <p className="text-lg text-gray-300 mb-4 leading-relaxed">
-                We are planning to add the following functionalities
-              </p>
-              <ul className="list-disc list-inside text-start text-lg text-gray-300 space-y-4 mt-6">
-                <li>Integration with popular Web3 wallets for seamless authentication</li>
-                <li>Automated data backup and version control</li>
-                <li>Support for smart contract-based file sharing</li>
-                <li>End-to-end encrypted messaging for secure communication</li>
-                <li>Advanced analytics for tracking file usage and access</li>
-                <li>Expanded support for multimedia files including video streaming</li>
-              </ul>
-            </section>
+							<h2 className="text-4xl font-semibold text-blue-300 mb-6">Decentra Future</h2>
+							<p className="text-lg text-gray-300 mb-4 leading-relaxed">
+								We are planning to add the following functionalities
+							</p>
+							<ul className="list-disc list-inside text-start text-lg text-gray-300 space-y-4 mt-6">
+								<li>Integration with popular Web3 wallets for seamless authentication</li>
+								<li>Automated data backup and version control</li>
+								<li>Support for smart contract-based file sharing</li>
+								<li>End-to-end encrypted messaging for secure communication</li>
+								<li>Advanced analytics for tracking file usage and access</li>
+								<li>Expanded support for multimedia files including video streaming</li>
+							</ul>
+						</section>
 					</main>
 
 					<footer className="mt-20 text-center text-gray-500" data-aos="fade-up">
