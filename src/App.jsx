@@ -72,10 +72,10 @@ function App() {
 						</section>
 
 						<div className="my-8 center">
-							<button className="bg-blue-700 hover:bg-blue-700 rounded-full pl-2 ring-2 ring-offset-2 center gap-2 px-2 py-2">
+							<a href='https://github.com/Raccoon254/DecentraDrive.git' className="bg-blue-700 hover:bg-blue-700 rounded-full pl-2 ring-2 ring-offset-2 center gap-2 px-2 py-2">
 								<img className='w-8 h-8' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
 								View in github
-							</button>
+							</a>
 						</div>
 
 						<section className="h-[50vh] text-start mt-10" data-aos="fade-up">
